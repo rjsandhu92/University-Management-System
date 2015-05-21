@@ -1,0 +1,63 @@
+﻿#topheader{
+	margin: 0 auto;
+    width:50px;
+	height:23px;
+	font-family: Tahoma;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #dcd66e;
+	text-decoration: none;
+	padding: 0px;
+	float: none;
+	
+	background-repeat: no-repeat;
+}
+
+.topmenu_area {
+	margin: 0px;
+	float: left;
+	width: 100px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left:0px;
+}
+
+.home {
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-image: url(../../images/login.png);
+	background-repeat: no-repeat;
+	margin: 0px;
+	float: left;
+	height: 23px;
+	width: 100px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 22px;
+}
+.home:hover {
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: bold;
+	color: #ed5400;
+	text-decoration: none;
+	background-image: url(../../images/login.png);
+	background-repeat: no-repeat;
+	margin: 0px;
+	float: left;
+	height: 23px;
+	width: 100px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 22px;
+}

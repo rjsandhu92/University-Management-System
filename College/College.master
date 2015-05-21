@@ -1,0 +1,204 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="College.master.cs" Inherits="College_College" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../App_Themes/ums/layout.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/ums/tripoli.simple.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   
+   <form id="frm" runat="server">
+<!-- Header -->
+<div id="header">
+	<div class="container content">
+		<h1><a href="../Default.aspx" title="Back to home"></a></h1>
+		<a href="../Default.aspx" target="_blank" class="viewWebsite"><span>View website</span></a>
+		<div class="loginInfos"> You're logged in as <strong>College Admin</strong>. <a href="editprofile.aspx" title="Edit your settings">Edit your settings</a>, or 
+            <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">Log out</asp:LinkButton> </div>
+	</div>
+</div>
+<!-- /Header -->
+
+<!-- Global -->
+
+	<div class="container content">
+		<!-- Sidebar --><table><tr><td valign="top">
+		<div id="sidebar" class="bImg">
+			<div class="bInner"><span class="bTR"></span><span class="bBL"></span>
+				<ul id="side-nav">
+					 	<li class="inactive"> 
+						<a href="#" title="Dashboard" class="button ">
+							<strong>
+								<img src="../img/icons/dashboard.png" alt="Dashboard" class="icon "/>
+								<span class="title">Dashboard</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<li><a href="Default.aspx" title="View Dashboard">View Dashboard</a></li>
+							
+						</ul>
+					</li>
+
+                     
+                    <li class="inactive"> 
+						<a href="#" title="Course" class="button">
+							<strong>
+								<img src="../img/icons/course.png" alt="Department" class="icon "/>
+								<span class="title">Courses</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<li><a href="addcourse.aspx" title="Add Course">Add Course</a></li>
+							<li><a href="courseupdate.aspx" title="Update course">Update Course</a></li>
+                            <li><a href="viewcourse.aspx" title="View Course">View Course</a></li>
+						</ul>
+					</li>
+
+                    <li class="inactive"> 
+						<a href="#" title="Department" class="button">
+							<strong>
+								<img src="../img/icons/depart.png" alt="Department" class="icon "/>
+								<span class="title">Department</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<li><a href="Adddepartment.aspx" title="Add Department">Add Department</a></li>
+							<li><a href="viewdepartmentfulldetail.aspx" title="View Department">View Department</a></li>
+
+						</ul>
+					</li>
+
+
+                     <li class="inactive"> 
+						<a href="#" title="Batch" class="button">
+							<strong>
+								<img src="../img/icons/batch.png" alt="Batch" class="icon "/>
+								<span class="title">Batch</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<li><a href="AddBatch.aspx" title="Add Batch">Add Batch</a></li>
+							<li><a href="viewbatch.aspx" title="View Batch">View Batch</a></li>
+                            <%--<li><a href="" title="Manage Batch">View Batch</a></li>--%>
+
+						</ul>
+					</li>
+						
+					<li class="inactive"> 
+						<a href="#" title="Faculty" class="button ">
+							<strong>
+								<img src="../img/icons/faculty.png" alt="Faculty" class="icon "/>
+								<span class="title">Faculty</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<li><a href="addfaculty.aspx" title="Add Faculty</">Add Faculty</a></li>
+							<li><a href="updatefaculty.aspx" title="Update Faculty">Update Faculty</a></li>
+                            <li><a href="viewfaculty.aspx" title="View Faculty">View Faculty</a></li>
+						</ul>
+					</li>
+
+                    <li class="inactive"> 
+						<a href="#" title="Subject" class="button">
+							<strong>
+								<img src="../img/icons/student.png" alt="Subjects" class="icon "/>
+								<span class="title">Subject</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<li><a href="Addsubject.aspx" title="Add Subject">Add Subject</a></li>
+							
+                           <%-- <li><a href="#" title="View Subject">View Subject</a></li>--%>
+
+						</ul>
+					</li>
+
+
+
+					<li class="inactive"> 
+						<a href="#" title="Student" class="button">
+							<strong>
+								<img src="../img/icons/student.png" alt="Students" class="icon "/>
+								<span class="title">Students</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<li><a href="addstudent.aspx" title="Add student">Add student</a></li>
+							<li><a href="studentupdate.aspx" title="Update Student">Update Student</a></li>
+                            <li><a href="viewstudent.aspx" title="View Students">View Students</a></li>
+
+						</ul>
+					</li>
+					
+                    <li class="inactive"> 
+						<a href="#" title="Result" class="button">
+							<strong>
+								<img src="../img/icons/result.png" alt="Result" class="icon "/>
+								<span class="title">Result</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							
+							<li><a href="Marksupload.aspx" title="Marks">Upload Marks</a></li>
+                            <li><a href="Viewmarks.aspx" title="Grade">View Marks</a></li>
+						
+
+						</ul>
+					</li>
+
+					<li class="inactive"> 
+						<a href="#" title="Settings" class="button">
+							<strong>
+								<img src="../img/icons/spanner_48.png" alt="Settings" class="icon "/>
+								<span class="title">Settings</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<li><a href="adminuser.aspx" title="Add user">Add user</a></li>
+                            <li><a href="viewadminuser.aspx" title="View User">View User</a></li>
+                            
+							<li><a href="editprofile.aspx" title="Edit Profile">Edit Profile</a></li>
+							<li><a href="ChangePassword.aspx" title="Change Password">Change Password</a></li>
+                            
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div></td><td valign="top">
+		
+		
+		
+	    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+          
+        
+        
+        </asp:ContentPlaceHolder> 
+        </td></tr></table>
+        </div>
+
+<%--<script type="text/javascript" SRC="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" SRC="../js/jquery-ui-1.7.custom.min.js"></script>
+
+<script type="text/javascript" SRC="../js/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" SRC="../js/jquery.dimensions.js"></script>
+<script type="text/javascript" SRC="../js/jquery.tooltip.min.js"></script>
+<script type="text/javascript" SRC="../js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" SRC="../js/titanium.js"></script>--%>
+
+</form>
+</body>
+
+</html>

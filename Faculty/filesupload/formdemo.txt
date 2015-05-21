@@ -1,0 +1,13 @@
+<html>
+<body>
+<form method="get" action="a.html"><fieldset>
+<legend>Personal Info</legend>
+First Name<input type="text" name="txt1">
+Last Name<input type="text" name="txt2">
+Password<input type="password" name="txt3">
+Confirm Password:<input type="password" name="txt4">
+age<input type="number" min="18" max="30">
+email id:<input type="email" name="txt5">
+dob:<input type="date" name="txt6">
+<input type="submit">
+</fieldset>

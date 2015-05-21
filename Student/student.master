@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="student.master.cs" Inherits="Student_student" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../App_Themes/ums/tripoli.simple.css" rel="stylesheet" type="text/css" />
+
+    <link href="../App_Themes/ums/layout.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   
+   <form id="frm" runat="server">
+<!-- Header -->
+<div id="header">
+	<div class="container content">
+		<h1><a href="../Default.aspx" title="Back to home"></a></h1>
+		<a href="../Default.aspx" target="_blank" class="viewWebsite"><span>View website</span></a>
+		<div class="loginInfos"> You're logged in as <strong>Student</strong>. <a href="editprofile.aspx" title="Edit your settings">Edit your settings</a>, or 
+            <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">Log Out</asp:LinkButton> </div>
+	</div>
+</div>
+<!-- /Header -->
+
+<!-- Global -->
+
+	<div class="container content">
+		<!-- Sidebar --><table><tr><td valign="top">
+		<div id="sidebar" class="bImg">
+			<div class="bInner"><span class="bTR"></span><span class="bBL"></span>
+				<ul id="side-nav">
+					 
+							<li class="inactive"> 
+						<a href="#" title="Dashboard" class="button ">
+							<strong>
+								<img src="../img/icons/dashboard.png" alt="Dashboard" class="icon "/>
+								<span class="title">Dashboard</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<li><a href="Default.aspx" title="View Dashboard">View Dashboard</a></li>
+							
+						</ul>
+					</li>
+					<li class="inactive"> 
+						<a href="#" title="Attendance" class="button ">
+							<strong>
+								<img src="../img/icons/Attendance.png" alt="Attendance" class="icon "/>
+								<span class="title">Attendance</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<li><a href="Attendance.aspx" title="View Attendance">View Attendance</a></li>
+							
+						</ul>
+					</li>
+					<li class="inactive"> 
+						<a href="#" title="Assignment" class="button">
+							<strong>
+								<img src="../img/icons/assignment.png" alt="Assignment" class="icon "/>
+								<span class="title">Assignment</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<li><a href="assignmentdownload.aspx" title="Assignment Download">View</a></li>
+							<li><a href="assignmentupload.aspx" title="Assignment Upload">Upload</a></li>
+							
+                            
+
+						</ul>
+					</li>
+					<li class="inactive"> 
+						<a href="#" title="Result" class="button">
+							<strong>
+								<img src="../img/icons/result.png" alt="Result" class="icon "/>
+								<span class="title">Result</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<%--<li><a href="ViewGrade.aspx" title="View Grade">View Grade</a></li>--%>
+							<li><a href="viewmarks.aspx" title="View Marks">View Marks</a></li>
+							
+						</ul>
+					</li>
+
+                   
+
+
+					<li class="inactive"> 
+						<a href="#" title="Settings" class="button">
+							<strong>
+								<img src="../img/icons/spanner_48.png" alt="Settings" class="icon "/>
+								<span class="title">Settings</span>
+								<span class="expand"></span>
+							</strong>
+						</a>
+						<ul>
+							<li><a href="editprofile.aspx" title="Edit Profile">Edit Profile</a></li>
+							<li><a href="ChangePassword.aspx" title="Change Password">Change Password</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div></td><td valign="top">
+		
+		
+		
+	    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+          
+        
+        
+        </asp:ContentPlaceHolder> 
+        </td></tr></table>
+        </div>
+
+<%--<script type="text/javascript" SRC="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" SRC="../js/jquery-ui-1.7.custom.min.js"></script>
+
+<script type="text/javascript" SRC="../js/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" SRC="../js/jquery.dimensions.js"></script>
+<script type="text/javascript" SRC="../js/jquery.tooltip.min.js"></script>
+<script type="text/javascript" SRC="../js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" SRC="../js/titanium.js"></script>--%>
+
+</form>
+</body>
+
+</html>

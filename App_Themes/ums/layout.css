@@ -1,0 +1,591 @@
+html{
+	background:url(../../img/background_beige.png);
+}
+body {
+	color:#333;
+	font-family:Verdana,Arial,Geneva,sans-serif;
+}
+
+a {
+	text-decoration:none;
+}
+
+.content{
+	text-align:left;
+}
+/* main container */
+.container {
+	width:1000px;
+	margin:0px auto;
+}
+/* Global */
+#page-content {
+	overflow:hidden;
+}
+a {
+	color:#16aec5;
+}
+#sidebar li ul li {
+	color:#cfc5c5;
+}
+#sidebar li ul li a {
+	color:#cfc5c5;
+}
+#sidebar li ul li.active a {
+	color:#ffffff;
+}
+
+
+/**************************************/
+/*             HEADINGS               */
+/**************************************/
+.content h1{
+	font-size:2em;
+}
+.content h2{
+	font-size:1.7em;
+}
+.content h3{
+	font-size:1.4em;
+}
+.content h4{
+	font-size:1.2em;
+}
+.content h5{
+	font-size:1em;
+}
+	.content h6
+	{
+    font-size:.6em;
+}
+/**************************************/
+/*              BUTTONS               */
+/**************************************/
+button.button {
+	padding:0px 0px 0px 10px;
+	text-align:left;
+	height:30px;
+	border:none;
+	position:relative;
+}
+/* Firefox 3px padding bug */
+button.button::-moz-focus-inner {
+ padding:0;
+ margin-top:-1px;
+ margin-left:-1px;
+}
+.button {
+	background:url(../../img/sprite.png) no-repeat 0 -180px;
+	display:block;
+	padding-left:10px;
+	color:#FFF;
+	position:relative;
+}
+.button strong {
+	background:url(../../img/sprite.png) no-repeat 100% -150px;
+	display:block;
+	height:30px;
+	line-height:28px;
+	padding-right:10px;
+	white-space:nowrap;
+}
+.button:hover {
+	text-decoration:none;
+	background-position:0 -240px;
+}
+.button:hover strong {
+	background-position:100% -210px;
+}
+/* Inactive */
+.buttonInactive, .inactive .button {
+	background-position:0 -300px;
+	color:#333;
+}
+.buttonInactive strong, .inactive .button strong {
+	background-position:100% -270px;
+}
+.buttonInactive:hover, .inactive .button:hover {
+	background-position:0 -360px;
+}
+.buttonInactive:hover strong, .inactive .button:hover strong {
+	background-position:100% -330px;
+}
+/* Expandable */
+.button .expand {
+	background:url(../../img/sprite.png) no-repeat 100% -2250px;
+	width:25px;
+	height:30px;
+	display:inline-block;
+	vertical-align:middle;
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+	right:10px;
+}
+.button .expanded {
+	background-position:100% -2280px;
+}
+button.small-button {
+	display:inline-block;
+	background:url(../../img/sprite.png) no-repeat 0 -2970px;
+	color:#333;
+	height:25px;
+}
+button.small-button strong {
+	background:url(../../img/sprite.png) no-repeat 100% -2940px;
+	line-height:25px;
+}
+button.small-button:hover {
+	background:url(../../img/sprite.png) no-repeat 0 -3030px;
+}
+button.small-button:hover strong {
+	background:url(../../img/sprite.png) no-repeat 100% -3000px;
+}
+#search-button strong {
+	padding-right:0;
+}
+/**************************************/
+/*            DATE PICKER	          */
+/**************************************/
+.fieldset .dateTable {
+	width:285px;
+}
+.fieldset .dateTable thead th {
+	text-align:center;
+	color:#FFFFFF;
+}
+.fieldset .dateTable thead th.first {
+	width:auto;
+}
+.fieldset .dateTable thead th.first div {
+	line-height:35px;
+	width:100%;
+}
+.fieldset .dateTable tbody a {
+	text-align:center;
+}
+.fieldset .dateTable tbody a:hover {
+	text-decoration:none;
+}
+.fieldset .dateTable tfoot .inner {
+	text-align:center;
+	line-height:27px;
+	height:21px;
+	font-weight:bold;
+}
+.fieldset .dateTable tfoot a {
+	padding:0px 0.5em;
+}
+
+
+
+/**************************************/
+/*   ROUNDED CORNERS WITH SPRITE      */
+/**************************************/
+.bTop, .bTop div, .bBottom, .bBottom div {
+	background-image:url(../../img/sprite.png);
+	background-repeat:no-repeat;
+}
+.bTop {
+	margin:0px 0px -5px 10px;
+}
+.bBottom {
+	margin:0px 0px 0px 10px;
+	background-position:100% -615px;
+}
+.bTop div, .bBottom div {
+	margin:0px 10px 0px -10px;
+	height:15px;
+}
+.bBottom div {
+	background-position:0px -795px;
+}
+
+/**************************************/
+/*  ROUNDED CORNERS WITH FULL IMAGE   */
+/**************************************/
+.bImg {
+	margin-bottom:10px;
+	margin-right:10px;
+	background-position:top left;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+.bImg .bInner {
+	margin-top:10px;
+	margin-left:10px;
+	margin-bottom:-10px;
+	margin-right:-10px;
+	padding:0px 10px 10px 0px;
+	position:relative;
+	background-position:bottom right;
+	background-repeat:no-repeat;
+}
+.bImg .bTR, .bImg .bBL {
+	background-repeat:no-repeat;
+	width:10px;
+	height:10px;
+	position:absolute;
+	display:block;
+}
+.bImg .bTR {
+	top:-10px;
+	right:0px;
+	background-position:top right;
+}
+.bImg .bBL {
+	bottom:0px;
+	left:-10px;
+	background-position:bottom left
+}
+
+/**************************************/
+/*               ICONS                */
+/**************************************/
+.icon {
+	width:24px;
+	height:24px;
+	vertical-align:middle;
+	margin:0 0 0 5px;
+}
+.button .icon{
+	margin:1px 0 5px 5px;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------- SPECIFIC ELEMENTS ------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/**************************************/
+/*             HEADER                 */
+/**************************************/
+#header {
+	background:url(../../img/header.png) repeat-x top;
+	margin-bottom:10px;
+	padding-bottom:10px;
+}
+#header .container{
+	line-height:77px;
+	overflow:hidden;
+}
+#header h1 {
+	margin:0px;
+	float:left;
+	background:url(../../img/header_glow.png) top center no-repeat;
+}
+#header h1 a {
+	/*position:relative;*/
+	display:block;
+	background:url(../../img/logo.png) center left no-repeat;
+	width:235px;
+	height:80px;
+	text-indent:-9000px;
+	overflow:hidden;
+}
+
+#header .viewWebsite {
+	float:left;
+	display:block;
+	line-height:30px;
+	height:30px;
+	margin:24px 0 0 10px;
+	font-size:1.4em;
+	text-decoration:none;
+	background:url(../../img/sprite.png) no-repeat 0px -60px;
+}
+#header .viewWebsite span {
+	background:url(../../img/sprite.png) no-repeat 100% -30px;
+	display:block;
+	margin-left:10px;
+	padding-right:10px;
+}
+#header .viewWebsite:hover {
+	background-position:0px -120px;
+}
+#header .viewWebsite:hover span {
+	background-position:100% -90px;
+}
+#header .loginInfos {
+	float:right;
+	color:#FFFFFF;
+}
+/**************************************/
+/*             SIDEBAR                */
+/**************************************/
+#sidebar {
+	float:left;
+	margin-right:20px;
+	font-size:1.2em;
+	width:225px;
+}
+#sidebar, #sidebar .bInner, #sidebar .bTR, #sidebar .bBL {
+	background-image:url(../../img/bg211.png);
+ background-repeat:repeat-y;
+	
+}
+
+#sidebar ul {
+	margin:0px;
+}
+#side-nav li{
+	list-style:none;
+	margin-bottom:5px;
+}
+/* Must use classes because pseudo-classes :first-child and :last-child aren't well implemented everywhere */
+#sidebar ul li.first {
+	background-position:0px 0px;
+	padding-top:10px;
+}
+#sidebar ul li.last {
+	background-position:0px 100%;
+	padding-bottom:10px;
+}
+#sidebar li a.button {
+	margin:0;
+
+}
+#sidebar li a.button strong{
+
+}
+#sidebar .icon{
+	margin:1px 5px 5px 0;
+	border:0px;
+
+}
+#sidebar li ul {
+	margin:0px;
+	clear:both;
+}
+#sidebar li ul li {
+	list-style:disc outside;
+	margin-left:50px;
+	background:none;
+	margin-bottom:0;
+	vertical-align:middle;
+}
+#sidebar li ul li a {
+	display:block;
+	padding-bottom:5px;
+}
+#sidebar li ul li a:hover {
+	display:block;
+	padding-left:5px;
+	padding-bottom:5px;
+}
+#sidebar li ul li.active a {
+	font-weight:bold;
+}
+.JS #sidebar .inactive ul{
+	display:none;
+}
+/**************************************/
+/*             CONTENT                */
+/**************************************/
+#content {
+	float:left;
+	width:695px;	
+}
+/* Inner Content */
+#innerContent{
+	padding:10px 10px 0px 10px;
+	background:url(../../img/content_bg.png) repeat-y right;
+	overflow:hidden;
+}
+/**************************************/
+/*            TITLE BAR               */
+/**************************************/
+#title {
+	height:50px;
+	background:url(../../img/sprite.png) no-repeat 100% -810px;
+	margin-left:10px;
+}
+#title h2 {
+	margin:0px 0px 0px -10px;
+	padding-left:10px;
+	background:url(../../img/sprite.png) no-repeat 0px -990px;
+	font-family:Georgia;
+	line-height:50px;
+	font-size:2em;
+	float:left;
+	position:relative;
+	left:0px;
+}
+#titleActions {
+	float:right;
+	overflow:hidden;
+	height:50px;
+	line-height:50px;
+	font-size:14px;
+	padding-right:10px;
+	margin-right:-10px;
+}
+#titleActions a{
+	color:#fff;
+}
+#titleActions .actionBlock {
+	float:left;
+	height:30px;
+	padding:10px;
+	margin:0;
+	background:url(../../img/vertical_separator.png) repeat-y top left;
+	line-height:30px;
+}
+/* Title actions : Add post & Search */
+#titleActions .listAdd .button span.icon {
+	margin-left:10px;
+	margin-top:-4px;
+}
+
+#titleActions .listSearch .search {
+	background:url("../../img/sprite.png") no-repeat 0 -420px;
+	float:left;
+	padding-left:10px;
+}
+#titleActions .listSearch .search label {
+	display:none;
+}
+#titleActions .listSearch .search input {
+	background:url("../../img/sprite.png") no-repeat 100% -390px;
+	border:0;
+	height:18px;
+	padding:5px 10px 5px 0px;
+	font-size:14px;
+	line-height:18px;
+	color:#FFFFFF;
+	width:170px;
+}
+#titleActions .listSearch .submit {
+	float:left;
+	margin-left:10px;
+}
+#titleActions .listSearch .submit button {
+	width:33px;
+}
+#titleActions .listSearch .submit button .icon {
+	margin:1px 0 5px -6px;
+}
+
+/**************************************/
+/*              TOOLBAR               */
+/**************************************/
+#toolbarActions {
+	overflow:hidden;	
+	background:url(../../img/sprite.png) 100% -2660px;
+}
+#toolbarActions p{
+	float:left;
+	margin:10px;
+}
+#toolbarActions ul{
+	overflow:hidden;
+	margin:0px;
+	float:left;
+}
+#toolbarActions li {
+	height:40px;
+	line-height:40px;
+	float:left;
+	list-style:none;
+	margin-right:20px;
+}
+#toolbarActions li a {
+	display:block;
+	padding-left:10px;
+}
+#toolbarActions li a:hover {
+	text-decoration:none;
+}
+/**************************************/
+/*             POST LIST              */
+/**************************************/
+/* List Header  : "You have 12 posts in 5 categories" and form to handle checkboxes*/
+#listHeader { 
+	overflow:hidden;
+	margin-bottom:10px;
+}
+#listHeader .listInfos {
+	float:left;
+	margin:0px;
+	line-height:25px;
+	height:25px;
+}
+#listHeader .listActions {
+	float:right;
+}
+#listHeader .listActions form {
+	margin:0px;
+}
+
+
+
+/**************************************/
+/*              USEFUL	              */
+/**************************************/
+.vcenter-outer {
+	display:table;
+	position:relative;
+	overflow:hidden;
+	height:600px;
+}
+.vcenter-middle {
+	position:absolute;
+	top:50%;
+	display:table-cell;
+	vertical-align:middle;
+}
+.vcenter-inner {
+	position:relative;
+	top:-50%;
+}
+.sub {
+	padding:10px;
+}
+.fleft {
+	display:block;
+	float:left !important;
+}
+.container .fleft {
+	margin:0 20px 10px 0;
+}
+.fright {
+	display:block;
+	float:right !important;
+}
+.container .fright {
+	margin:0 0 10px 20px;
+}
+.aleft, .container .aleft {
+	text-align:left;
+}
+.aright, .container .aright {
+	text-align:right;
+}
+.acenter, .container .acenter {
+	text-align:center;
+}
+.container div.border {
+	border-color:#666;
+}
+.container li p {
+	text-align:left;
+}
+div.border, div.colborder {
+	border-color:#333;
+}
+.no-margin, .container .no-margin {
+	margin:0;
+}
+.no-padding .container .no-padding {
+	padding:0;
+}
+/**************************************/
+/*          TRIPOLI OVERRIDE          */
+/**************************************/
+.content caption, .content form div {
+padding-bottom:10px;
+}
+
+
+.container1 {
+	width:300px;
+	margin:0px auto;
+
